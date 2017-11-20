@@ -1,0 +1,42 @@
+<view class="contain">
+    <view class="search">
+        <icon type="search" size="18" color="#acacac" class="icon"/>
+        <input type="text" class="input" placeholder="请输入商品名称" bindinput="bindKeyInput"/>
+        <text class="label">搜索</text>
+    </view>
+    <view class="slider">
+        <swiper indicator-dots="{{indicatorDots}}"
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="classifyIcon">
+        <image src="../../common/images/index_bg.png" mode="aspectFit" class="iconBg"></image>
+        <view wx:for="{{iconUrls}}" class="iconItem">
+            <view class="IconView">
+                <image src="{{item.url}}" mode="aspectFit" class="iconImg"></image>
+                <text class="iconText">{{item.name}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="recommend">
+        <image src="../../common/images/index_ad1.png" mode="aspectFit" class="recommendImg"></image>
+    </view>
+    <view class="newProduct">
+        <image src="../../common/images/index_bg2.png" mode="aspectFit" class="newBg"></image>
+        <view class="newH3">新品专区</view>
+        <view class="newView cl">
+            <view class="newItem"  wx:for="{{newsProduct}}">
+                <view class="newDetails">
+                    <image src="{{item.url}}" mode="aspectFit" class="newImg"></image>
+                    <text class="newTitle">{{item.title}}</text>
+                    <text class="newPrice">{{item.price}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

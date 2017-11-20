@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/home/index",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "健康商城",
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"#000000"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/home/index",
+        "text":"店铺首页",
+        "iconPath":"common/images/sprite1_01.png",
+        "selectedIconPath":"common/images/sprite1_03.png"
+      },
+      {
+        "pagePath":"pages/logs/logs",
+        "text":"分类",
+        "iconPath":"common/images/sprite1_06.png",
+        "selectedIconPath":"common/images/sprite1_08.png"
+      },
+      {
+        "pagePath":"pages/index/index",
+        "text":"购物车",
+        "iconPath":"common/images/sprite1_12.png",
+        "selectedIconPath":"common/images/sprite1_13.png"
+      },
+      {
+        "pagePath":"pages/logs/logs",
+        "text":"个人中心",
+        "iconPath":"common/images/sprite1_17.png",
+        "selectedIconPath":"common/images/sprite1_19.png"
+      }
+    ],
+    "selectedColor":"#45bdb4",
+    "color":"#acacac"
+  }
+}
